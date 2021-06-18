@@ -41,7 +41,8 @@ O projeto trata-se de uma livraria
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React Native](https://reactnative.dev/)
 - [Express]
-- [Typescritp]
+- [Typescript]
+- [MongoDB]
 - [Redux]
 - [JWT]
 - [Styled-Components]
