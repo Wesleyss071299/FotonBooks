@@ -1,7 +1,7 @@
 import styled from 'styled-components/native'
 import {CustomThemeProps} from '../../constants/theme';
 
-export const Container = styled.View<CustomThemeProps>`
+export const Container = styled.KeyboardAvoidingView<CustomThemeProps>`
     flex: 1;
     align-items: center;
     background-color: ${props => props.theme.background};
@@ -11,6 +11,7 @@ export const Title = styled.Text<CustomThemeProps>`
     margin-bottom: 30px;
     font-weight: bold;
     margin-top: 20px;
+    align-self: center;
     color: ${props => props.theme.text};
 `
 export const Label = styled.Text<CustomThemeProps>`
@@ -22,6 +23,12 @@ export const Label = styled.Text<CustomThemeProps>`
     margin-bottom: 8px;
     font-weight: bold;
     color: ${props => props.theme.text};
+`
+
+
+export const InputBox = styled.View`
+    flex: 1;
+    align-items: center;
 `
 
 export const SecondaryText = styled.Text<CustomThemeProps>`

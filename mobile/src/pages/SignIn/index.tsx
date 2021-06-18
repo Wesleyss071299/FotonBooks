@@ -1,11 +1,14 @@
+import { Platform } from 'react-native'
 import React, {useState} from 'react'
 import Input from '../../components/Input'
-import { Container, Title, Label, DarkModeBox, SecondaryText } from './styles'
+import { Container, Title, Label, DarkModeBox, SecondaryText, InputBox } from './styles'
 import PrimaryButton from '../../components/PrimaryButton'
 import DarkModeToogle from '../../components/DarkModeToogle'
 import ModalView from '../../components/ModalView/Index'
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
+import { Header } from '@react-navigation/stack';
+
 
 // Redux Toolkit
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
@@ -34,18 +37,23 @@ const SignIn: React.FC = () => {
         }
     }
     return (
-            <Container>
+            <Container
+            behavior={Platform.OS === 'ios' ? 'padding' : 'position'}
+            keyboardVerticalOffset={Platform.OS === 'android' ? -150 : 25}
+            >
                 <DarkModeBox>
                     <DarkModeToogle/>
                 </DarkModeBox>
                 <Title>Login</Title>
                 <Label>Email</Label>
-                <Input value={email} onChangeText={email => setEmail(email)} multline={false}/>
-                <Label>Password</Label>
-                <Input value={password} onChangeText={password => setPassword(password)} multline={false} secureTextEntry={true}/> 
-                <PrimaryButton title="Sign In" onPress={handleSignIn}/>
+                <InputBox>                    
+                    <Input value={email} onChangeText={email => setEmail(email)} multline={false}/>
+                    <Label>Password</Label>
+                    <Input value={password} onChangeText={password => setPassword(password)} multline={false} secureTextEntry={true}/> 
+                    <PrimaryButton title="Sign In" onPress={handleSignIn}/>
+                    <SecondaryText onPress={() => navigation.navigate('Register')}>Don`t have account? Press here</SecondaryText>
+                </InputBox>
                 
-                <SecondaryText onPress={() => navigation.navigate('Register')}>Don`t have account? Press here</SecondaryText>
                 { isOpen &&
                     <ModalView 
                         isOpen={isOpen} 

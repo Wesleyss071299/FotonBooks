@@ -1,7 +1,7 @@
 import styled from 'styled-components/native'
 import {CustomThemeProps} from '../../constants/theme';
 
-export const Container = styled.View<CustomThemeProps>`
+export const Container = styled.KeyboardAvoidingView<CustomThemeProps>`
     flex: 1;
     align-items: center;
     background-color: ${props => props.theme.background};

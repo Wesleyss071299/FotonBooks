@@ -7,6 +7,7 @@ import { AntDesign } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import api from '../../services/api';
+import { Platform } from 'react-native'
 
 
 const Register: React.FC = () => {
@@ -47,7 +48,10 @@ const Register: React.FC = () => {
         }
     }
     return (
-        <Container>
+        <Container
+        behavior={Platform.OS === 'ios' ? 'padding' : 'position'}
+        keyboardVerticalOffset={Platform.OS === 'android' ? -50 : 5}
+        >
             <BackBox>
                 <AntDesign name="arrowleft" size={24} color="black"  onPress={() => navigation.goBack()}/>
             </BackBox>
