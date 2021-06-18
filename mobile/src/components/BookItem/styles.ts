@@ -10,12 +10,11 @@ export const Container = styled.TouchableOpacity`
 `
 
 export const ImageBox = styled.View`
-
     justify-content: flex-start;
     align-items: center;
 `
 export const TitleBox = styled.View`
-flex: 1;
+    flex: 1;
 `
 export const Title = styled.Text<CustomThemeProps>`
     color: ${(props) => props.theme.text};
