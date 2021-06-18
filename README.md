@@ -32,9 +32,8 @@
 ## 💻 Sobre o projeto
 
 
-Este projeto usa a API do Github para procurar usuários e listar seu repositórios, seguidores e seguindo 
-
-Projeto desenvolvido em um teste técnico para estágio
+Este projeto foi desenvolvido para vaga de Desenvolvedor Fullstack Junior na Foton Tech
+O projeto trata-se de uma livraria 
 
 
 ## 🚀 Tecnologias
