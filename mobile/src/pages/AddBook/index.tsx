@@ -60,11 +60,9 @@ const AddBook: React.FC = () => {
         data.append('description', description)
 
         const newImageUri =  "file:///" + image?.uri.split("file:/").join("");
-        data.append('file', {
-            type: mime.getType(newImageUri),
-            uri: newImageUri,
-            name: image?.uri.split("/").pop()
-        })
+        const imageData = JSON.parse(JSON.stringify({ uri: newImageUri, type: mime.getType(newImageUri), name: image?.uri.split("/").pop()}));
+
+        data.append('file', imageData)
         const token = await AsyncStorage.getItem('@token')
         try {
             await api.post('books', data, {
