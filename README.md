@@ -42,22 +42,27 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Features
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
 1. Login
 2. Register
 3. Adicionar livro com capa
 4. Visualizar detalhes do livro
 5. Dark Mode
+6. Buscar livro (Fuzzy Search)
+7. Página de Profile
+8. Pull-refreh na home para substituir o botão de carregar mais
 
 ## 🏋️‍♀️ Como Rodar o projeto
 
 1. Faça o git clone do projeto.
-2. Entre na pasta sever e escreva os seguintes comandos `yarn install` e `yarn dev`
-3. Entre na pasta mobile e escreva os seguintes comandos `yarn install` e `expo start`
-4. Abra o emulador ou seu dispositivo físico para rodar o App
-5. Crie um usuário e faça login
-6. Usuário já cadastrado no banco {Email: foton.tech@email.com, Password: 1234}
+2. Server 
+  2.1. Entre na pasta sever e escreva o seguinte comando `yarn install`
+  2.2. Para rodar o banco de dados precisa ter o docker-compose instalado, rode o seguinte comando na pasta server `sudo docker-compose up`
+  2.3. Para rodar o servidor basta rodar o commando `yarn dev`
+3. Mobile
+  3.1. Entre na pasta mobile e escreva os seguintes comandos `yarn install` e `expo start`
+  3.2. Entre na pasta mobile no arquivo .env coloque o ip da sua máquina com a porta 3333 ex: API_IP=192.168.0.1:3333
+  3.3. Abra o emulador ou seu dispositivo físico para rodar o App
+  3.4. Crie um usuário e faça login
 
 ## 🦸 Autor
 
