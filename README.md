@@ -55,14 +55,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 1. Faça o git clone do projeto.
 2. Server 
-  2.1. Entre na pasta sever e escreva o seguinte comando `yarn install`
-  2.2. Para rodar o banco de dados precisa ter o docker-compose instalado, rode o seguinte comando na pasta server `sudo docker-compose up`
-  2.3. Para rodar o servidor basta rodar o commando `yarn dev`
+  - Entre na pasta sever e escreva o seguinte comando `yarn install`
+  - Para rodar o banco de dados precisa ter o docker-compose instalado, rode o seguinte comando na pasta server `sudo docker-compose up`
+  - Para rodar o servidor basta rodar o commando `yarn dev`
 3. Mobile
-  3.1. Entre na pasta mobile e escreva os seguintes comandos `yarn install` e `expo start`
-  3.2. Entre na pasta mobile no arquivo .env coloque o ip da sua máquina com a porta 3333 ex: API_IP=192.168.0.1:3333
-  3.3. Abra o emulador ou seu dispositivo físico para rodar o App
-  3.4. Crie um usuário e faça login
+  - Entre na pasta mobile e escreva os seguintes comandos `yarn install` e `expo start`
+  - Entre na pasta mobile no arquivo .env coloque o ip da sua máquina com a porta 3333 ex: API_IP=192.168.0.1:3333
+  - Abra o emulador ou seu dispositivo físico para rodar o App
+  - Crie um usuário e faça login
 
 ## 🦸 Autor
 
