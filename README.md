@@ -60,7 +60,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
   - Para rodar o servidor basta rodar o commando `yarn dev`
 3. Mobile
   - Entre na pasta mobile e escreva os seguintes comandos `yarn install` e `expo start`
-  - Entre na pasta mobile no arquivo .env coloque o ip da sua máquina com a porta 3333 ex: API_IP=192.168.0.1:3333
+  - Entre na pasta mobile no arquivo .env coloque o ip da sua máquina com a porta 3333 ex: API_IP='192.168.0.1:3333'
   - Abra o emulador ou seu dispositivo físico para rodar o App
   - Crie um usuário e faça login
 
