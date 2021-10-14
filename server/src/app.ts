@@ -25,7 +25,7 @@ class App {
     }
 
     private database (): void {
-      mongoose.connect('mongodb+srv://wesley:36362119@api.j4wgd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+      mongoose.connect('mongodb://root:example@127.0.0.1:27017/', {
         useUnifiedTopology: true,
         useNewUrlParser: true
       }).then(() => {

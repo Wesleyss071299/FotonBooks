@@ -11,7 +11,7 @@ export const auth = async(req: Request, res: Response, next: NextFunction) => {
     const [ ,token] = authHeader.split(' ')
 
     try {
-        await jwt.verify(token, process.env.APP_SECRET)
+        await jwt.verify(token, process.env.APP_SECRET || '')
         next()
     } catch (error) {
         return res.status(401).json({ message: 'Token invalid'})

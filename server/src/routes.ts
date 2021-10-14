@@ -13,8 +13,7 @@ routes.post('/users', UserController.store)
 routes.get('/users', UserController.index)
 routes.post('/login', UserController.login)
 
-routes.get('/books', auth,  BookController.index)
+routes.get('/books', auth, BookController.index)
 routes.post('/books', auth, upload.single('file'), BookController.store)
-
 
 export default routes
